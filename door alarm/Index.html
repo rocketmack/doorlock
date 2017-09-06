@@ -1,0 +1,29 @@
+<html>
+<title>
+  Home
+</title>
+<head>
+</head>
+<body>
+  <center><font size="5" font color="red"><p>Welcome to title Room</p></font></center>
+  <center>
+  <h1>Login</h1>
+          <form name="Login">
+              Username<input type="text" name="userid"/><br>
+              Password<input type="password" name="pswrd"/><br>
+              <input type="button" onclick="check(this.form)" value="Login"/>
+              <input type="reset" value="Cancel"/>
+          </form>
+          <script language="javascript">
+              function check(form) {
+                  if(form.userid.value == "admin" && form.pswrd.value == "admin") {
+                      window.open('login.html')
+                  }
+                  else {
+                      alert("Your Username and Password are incorrect")
+                  }
+              }
+          </script>
+        </center>
+</body>
+</html>
